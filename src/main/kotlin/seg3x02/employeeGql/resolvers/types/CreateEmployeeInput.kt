@@ -1,11 +1,12 @@
+// File: src/main/kotlin/seg3x02/employeeGql/resolvers/types/CreateEmployeeInput.kt
+
 package seg3x02.employeeGql.resolvers.types
 
-class CreateEmployeeInput (
-    val name: String? = null,
-    val dateOfBirth: String?  = null,
-    val city: String? = null,
-    val salary: Float? = null,
-    val gender: String? = null,
-    val email: String?  = null
+data class CreateEmployeeInput(
+    val employeeNumber: String = "",
+    val firstName: String = "",
+    val lastName: String = "",
+    val email: String = "",
+    val employeeRole: String = "",
+    val department: String = ""
 )
-
